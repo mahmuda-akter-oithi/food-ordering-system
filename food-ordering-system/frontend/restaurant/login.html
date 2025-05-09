@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Customer Login - Food Ordering System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/kawaii.css" />
+    <script src="../script/kawai2.js" defer></script>
+    <script src="./scripts/login-check.js" defer></script>
+    <script src="./scripts/auth.js" defer></script>
+  </head>
+
+  <body style="background-image: url('../img/bg.png')">
+    <header flex>
+      <h1><a flat href="../">Order Food</a></h1>
+      <form action="../search.html" method="get" shade1 no-decors round-edge>
+        <input name="q" type="text" placeholder="search" inline center />
+        <div>
+          <button type="submit" name="food">Food</button>|
+          <button type="submit" name="restaurant">Restaurants</button>
+        </div>
+      </form>
+      <div flex paddings>
+        <a href="../customer/">Customer<br />Zone</a>
+      </div>
+    </header>
+
+    <main id="login-form">
+      <h2>Restaurant Login</h2>
+      <input name="email" type="email" placeholder="Enter email" required />
+      <input
+        name="password"
+        type="password"
+        placeholder="Enter password"
+        required
+      />
+      <br />
+      <button id="wow" onclick="login()">Login</button>
+      <a id="message"></a>
+      <br />
+      <a href="./register.html">Register</a>
+    </main>
+
+    <footer>Developed By Oithi</footer>
+  </body>
+</html>
